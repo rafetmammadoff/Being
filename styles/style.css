@@ -1,0 +1,91 @@
+.general-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.general-container #header {
+  background-color: #f8f9fa;
+}
+
+.general-container #header .custom-container .my-nav .web-zone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100px;
+}
+
+.general-container #header .custom-container .my-nav .navbar-nav {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.general-container #first-slide-area .custom-container .first-slide {
+  overflow: hidden;
+}
+
+.general-container #first-slide-area .custom-container .first-slide .owl-stage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.general-container #first-slide-area .custom-container .first-slide .slide-item {
+  position: relative;
+  width: 100%;
+  margin-left: 100px;
+}
+
+.general-container #first-slide-area .custom-container .first-slide .slide-item .text-area {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  max-width: 389px;
+}
+
+.general-container #first-slide-area .custom-container .first-slide .slide-item .text-area .head {
+  width: 93px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: yellow;
+}
+
+.general-container #first-slide-area .custom-container .first-slide .slide-item .text-area .tittle {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.general-container #first-slide-area .custom-container .first-slide .slide-item .text-area .foot {
+  font-size: 13px;
+  color: #6b6768;
+}
+
+.general-container #first-slide-area .custom-container .first-slide .slide-item .img-area {
+  max-width: 450px;
+  margin-left: 177px;
+}
+
+.general-container #first-slide-area .custom-container .first-slide .slide-item .img-area img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.custom-container {
+  max-width: 1200px;
+}
+/*# sourceMappingURL=style.css.map */
