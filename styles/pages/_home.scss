@@ -145,12 +145,12 @@
                         margin: 0;
                         display: flex;
                         align-items: center;
-                        justify-content: space-between;
+                        
                         flex-wrap: wrap;
                         padding: 0;
                         li{
                             list-style-type: none;
-                            max-width: 125px;
+                            padding: 6px;
                             .img-zone{
                                 width: 100%;
                                 position: relative;
@@ -446,7 +446,7 @@
                         padding: 0;
                         li{
                             list-style-type: none;
-                            max-width: 125px;
+                            padding: 6px;
                             .img-zone{
                                 width: 100%;
                                 position: relative;

@@ -170,9 +170,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0;
@@ -180,7 +177,7 @@
 
 .general-container #small-images .custom-container .row .col-12 .cat-list li {
   list-style-type: none;
-  max-width: 125px;
+  padding: 6px;
 }
 
 .general-container #small-images .custom-container .row .col-12 .cat-list li .img-zone {
@@ -494,7 +491,7 @@
 
 .general-container #footer .custom-container .row .footer-top .cat-list li {
   list-style-type: none;
-  max-width: 125px;
+  padding: 6px;
 }
 
 .general-container #footer .custom-container .row .footer-top .cat-list li .img-zone {
@@ -713,6 +710,40 @@ li {
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
+  }
+}
+
+.my-togl {
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-three {
+    width: calc(100%/3) !important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .grid-four {
+    width: 25% !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .grid-eight {
+    width: calc(100%/8) !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .f-grid-four {
+    width: 25% !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .f-grid-eight {
+    width: calc(100%/8) !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

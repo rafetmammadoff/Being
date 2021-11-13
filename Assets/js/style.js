@@ -43,7 +43,15 @@ function darkMode(){
         cardfootdark[a].classList.toggle('card-f-dark')
         
     }
+    let mytogler=document.getElementsByClassName('my-togler')
 
+    mytogler[0].classList.toggle('my-togl')
 
-   
+    let mylogo=document.getElementById('my-logo')
+
+    if(elements[0].classList.contains("back-black")){
+        mylogo.src = "./img/logo-white.png";
+    }else{
+        mylogo.src = "./img/logo-dark.png";
+    }
 }
