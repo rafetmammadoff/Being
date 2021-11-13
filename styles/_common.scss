@@ -1,3 +1,76 @@
 .custom-container{
     max-width: 1200px;
 }
+
+.back-black{
+    background-color: black !important;
+    transition: 1s all ease;
+}
+
+.btn-bg{
+    background-color: #2b2b2b !important;
+    color: white !important;
+}
+.arxasi-qaralacaq-elementler{
+    transition: 1s;
+}
+.sm-img-dark{
+    background-color: #2b2b2b !important;
+}
+
+.card-f-dark{
+    color: white !important;
+}
+
+@media only screen and (max-width: 992px){
+    #first-slide-area{
+        .slide-item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 !important;
+            .img-area{
+                margin: 0 !important;
+            }
+        }
+    }
+} 
+
+.txt-white{
+    color: #fff !important;
+    transition: 1s all ease;
+}
+li{
+    list-style-type: none;
+}
+
+@media only screen and (max-width: 992px){
+    #header{
+        .web-zone{
+            width: 100% !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            i{
+                margin-right: 7px !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #eight-components{
+        .comp-part-left{
+            display: flex !important;
+            justify-content: center !important;
+        }
+        .comp-part-right{
+            text-align: center !important;
+            .b-head{
+                display: flex !important;
+                justify-content: center !important;
+            }
+        }
+    }
+
+}
