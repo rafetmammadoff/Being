@@ -46,6 +46,7 @@ function darkMode(){
     let mytogler=document.getElementsByClassName('my-togler')
 
     mytogler[0].classList.toggle('my-togl')
+    //************************************************************************* */
 
     let mylogo=document.getElementById('my-logo')
 
@@ -54,4 +55,67 @@ function darkMode(){
     }else{
         mylogo.src = "./img/logo-dark.png";
     }
+    //************************************************************************* */
+    let searchtoggle=document.getElementsByClassName('search')
+    searchtoggle[0].classList.toggle('search-toggle-style')
+    //************************************************************************ */
+    let firstinp=document.getElementById('first-inp')
+    firstinp.classList.toggle('f-input')
+    //************************************************************************* */
+    let firstbtn=document.getElementById('first-btn')
+    firstbtn.classList.toggle('f-btn')
+    //************************************************************************* */
+    let distoggle=document.getElementsByClassName('disable')
+    distoggle[0].classList.toggle('disable-toggle-style')
+    //************************************************************************* */
+    let myicon=document.getElementById('my-icon')
+    
+    if(elements[0].classList.contains("back-black")){
+        myicon.classList.toggle('fa-moon')
+        myicon.classList.remove('fa-sun')
+
+    }else{
+        myicon.classList.toggle('fa-sun')
+        myicon.classList.remove("fa-moon")
+
+    }
+
+    //******************************************************************************* */
+    let pagehover=document.getElementsByClassName('page-hover')
+    for (let a = 0; a < pagehover.length; a++) {
+        pagehover[a].classList.toggle('page-hover-style')
+    }
+    
+    
+
+}
+
+function mySearchArea(){
+    let searcharea=document.getElementById('search-area')
+    searcharea.classList.toggle('my-search-area-style')
+}
+
+
+const changelang=document.querySelectorAll('.language')
+
+
+const trLang=()=>{
+    changelang[0].innerHTML="Ev"
+    changelang[1].innerHTML="Makale"
+    changelang[2].innerHTML="Mesaj Ozellikler"
+    changelang[3].innerHTML="Sanat ve Tasarim"
+    changelang[4].innerHTML="Sayfalar"
+    changelang[5].innerHTML="Iletisim"
+    
+   
+    
+    
+}
+const enLang=()=>{
+    changelang[0].innerHTML="Home"
+    changelang[1].innerHTML="Blog"
+    changelang[2].innerHTML="Posts Features"
+    changelang[3].innerHTML="Art & Design"
+    changelang[4].innerHTML="Pages"
+    changelang[5].innerHTML="Contact"
 }

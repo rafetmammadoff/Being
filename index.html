@@ -15,6 +15,20 @@
   <body>
     <div class="general-container arxasi-qaralacaq-elementler">
 
+        <section id="search-area" class="arxasi-qaralacaq-elementler">
+          <div onclick="mySearchArea()" class="disable">
+            <i class="fas fa-times"></i>
+          </div>
+          <div class="container">
+            <div class="email-area">
+              <form>
+                <input id="first-inp" type="email" required placeholder="What are you looking for?">
+                <button id="first-btn" type="submit"><i class="fas fa-search"></i> Search</button>
+              </form>
+            </div>
+
+          </div>
+        </section>
         <section id="header" class="arxasi-qaralacaq-elementler">
             <div class="container custom-container">
                 <nav class="navbar navbar-expand-lg navbar-light my-nav arxasi-qaralacaq-elementler">
@@ -25,34 +39,56 @@
                       </button>
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
-                            <a class="nav-link active white-text" aria-current="page" href="#">Home</a>
+                          <li class="nav-item nav-page">
+                            <a class="nav-link active white-text language" aria-current="page" href="#">Home</a>
+                            <ul class="page-hover">
+                              <li>Home 1</li>
+                              <li>Home 2</li>
+                              <li>Home 3</li>
+                            </ul>
+                          </li>
+                          <li class="nav-item nav-page">
+                            <a class="nav-link active white-text language" aria-current="page" href="#">Blog </a>
+                            <ul class="page-hover">
+                              <li>Blog List</li>
+                              <li>Blog List 2</li>
+                              <li>Blog Grid</li>
+                              <li>Blog Grid 2</li>
+
+                            </ul>
+                          </li>
+                          <li class="nav-item nav-page">
+                            <a class="nav-link active white-text language" aria-current="page" href="#">Posts Features</a>
+                            <ul class="page-hover">
+                              <li>Post Default</li>
+                              <li>Right Slidebar</li>
+                              <li>Left Slidebar</li>
+                            </ul>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link active white-text" aria-current="page" href="#">Blog </a>
+                            <a class="nav-link active white-text language" aria-current="page" href="#">Art & Design</a>
+                          </li>
+                          <li class="nav-item nav-page">
+                            <a class="nav-link active white-text language" aria-current="page" href="#">Pages</a>
+                            <ul class="page-hover">
+                              <li>Author</li>
+                              <li>About</li>
+                              <li>Contact</li>
+                            </ul>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link active white-text" aria-current="page" href="#">Posts Features</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active white-text" aria-current="page" href="#">Art & Design</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active white-text" aria-current="page" href="#">Pages</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active white-text" aria-current="page" href="#">Contact</a>
+                            <a class="nav-link active white-text language" aria-current="page" href="#">Contact</a>
                           </li>
                           
                         </ul>
                         <div class="web-zone white-text">
                             
-                          <span>EN</span>
-                          <span>AZ</span>
+                          <span onclick="enLang()">EN</span>
+                          <span onclick="trLang()">TR</span>
                             <div onclick="darkMode()" id="dark-white">
-                              <i class="fas fa-sun"></i>
+                              <i id="my-icon" class="fas fa-sun"></i>
                             </div>
-                            <div class="search">
+                            <div onclick="mySearchArea()" class="search">
                                 <i class="fas fa-search"></i>
                             </div>
                         </div>
@@ -84,7 +120,7 @@
                     <div class="slide-item item">
                       <div class="text-area">
                           <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
-                          <div class="tittle white-text">
+                          <div id="tree" class="tittle white-text">
                               How to Bring your Plants Indoors for the fall and winter
 
                           </div>
