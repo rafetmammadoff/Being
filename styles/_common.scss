@@ -148,3 +148,22 @@ li{
 .lang-dark-style{
     color: #fff !important;
 }
+
+@keyframes rafet{
+    0%{
+        transform: rotate(0deg);
+
+    }
+    50%{
+        transform: rotate(360000deg);
+
+    }
+    100%{
+        transform: rotate(0deg);
+
+    }
+}
+
+.sty{
+    color: #fff !important;
+}

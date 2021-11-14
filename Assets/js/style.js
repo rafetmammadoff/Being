@@ -1,3 +1,12 @@
+
+
+
+function search(){
+    let input=document.getElementById('first-inp').value
+    window.location.href="https://www.google.com/search?q=" + input
+
+}
+
 $('.owl-carousel').owlCarousel({
     margin:0,
     loop: true,
@@ -101,7 +110,8 @@ function darkMode(){
         
     }
     //*********************************************************************************** */
-    
+    let input1=document.getElementById('first-inp')
+    input1.classList.toggle('sty')
     
 
 }
@@ -122,6 +132,8 @@ const trLang=()=>{
     changelang[3].innerHTML="Sanat ve Tasarim"
     changelang[4].innerHTML="Sayfalar"
     changelang[5].innerHTML="Iletisim"
+    
+
     
    
     

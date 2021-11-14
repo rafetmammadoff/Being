@@ -22,8 +22,8 @@
           <div class="container">
             <div class="email-area">
               <form>
-                <input id="first-inp" type="email" required placeholder="What are you looking for?">
-                <button id="first-btn" type="submit"><i class="fas fa-search"></i> Search</button>
+                <input id="first-inp" type="email" placeholder="What are you looking for?">
+                <button onclick="search()" id="first-btn" type="submit"><i class="fas fa-search"></i> Search</button>
               </form>
             </div>
 
@@ -83,8 +83,8 @@
                         </ul>
                         <div class="web-zone white-text">
                             
-                          <span class="lang-dark" onclick="enLang()">EN</span>
-                          <span class="lang-dark" onclick="trLang()">TR</span>
+                          <span class="lang-dark english" onclick="enLang()"></span>
+                          <span class="lang-dark turkish" onclick="trLang()"></span>
                             <div onclick="darkMode()" id="dark-white">
                               <i id="my-icon" class="fas fa-sun"></i>
                             </div>
@@ -104,7 +104,7 @@
                     <div class="slide-item item">
                         <div class="text-area">
                             <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
-                            <div class="tittle white-text">
+                            <div class="tittle white-text tr-tittle">
                                 How to Bring your Plants Indoors for the fall and winter
 
                             </div>
@@ -120,7 +120,7 @@
                     <div class="slide-item item">
                       <div class="text-area">
                           <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
-                          <div id="tree" class="tittle white-text">
+                          <div id="tree" class="tittle white-text tr-tittle">
                             The biggest Spring/Summer 2021 trends for men
 
                           </div>
@@ -136,7 +136,7 @@
                   <div class="slide-item item">
                     <div class="text-area">
                         <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
-                        <div class="tittle white-text">
+                        <div class="tittle white-text tr-tittle">
                           The Easiest loaf of Bread you'll ever bake
                         </div>
                         <div class="foot">
@@ -252,7 +252,7 @@
                       <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
                     </div>
                     <div class="tittle white-text">
-                        How to Bring your Plants Indoors for the fall and winter
+                      Lighting tips for every room in the house
 
                     </div>
                     <div class="foot">
@@ -275,7 +275,7 @@
                       <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
                     </div>
                     <div class="tittle white-text">
-                        How to Bring your Plants Indoors for the fall and winter
+                      It’s easier to ask forgiveness than it is to get permission.
 
                     </div>
                     <div class="foot">
@@ -298,7 +298,7 @@
                       <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
                     </div>
                     <div class="tittle white-text">
-                        How to Bring your Plants Indoors for the fall and winter
+                      45 Summer Flowers for a Stunning Home Garden
 
                     </div>
                     <div class="foot">
@@ -321,7 +321,7 @@
                       <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
                     </div>
                     <div class="tittle white-text">
-                        How to Bring your Plants Indoors for the fall and winter
+                      12 rules an interior decorator never forgets
 
                     </div>
                     <div class="foot">
@@ -344,7 +344,7 @@
                       <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
                     </div>
                     <div class="tittle white-text">
-                        How to Bring your Plants Indoors for the fall and winter
+                      The best way to predict the future is to create it
 
                     </div>
                     <div class="foot">
@@ -367,7 +367,7 @@
                       <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
                     </div>
                     <div class="tittle white-text">
-                        How to Bring your Plants Indoors for the fall and winter
+                      30 Perfect Flowers for a Fall <br> Garden
 
                     </div>
                     <div class="foot">
@@ -467,7 +467,7 @@
                         <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
                       </div>
                       <div class="tittle white-text">
-                        12 rules an interior decorator never forgets
+                        You don’t have to be ‘a creative’ to be creative.
   
                       </div>
                       <div class="foot">
@@ -494,7 +494,7 @@
                         <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
                       </div>
                       <div class="tittle white-text">
-                        12 rules an interior decorator never forgets
+                        How to Design Modern Spaces That Don't Feel Cold
   
                       </div>
                       <div class="foot">
@@ -521,7 +521,7 @@
                         <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
                       </div>
                       <div class="tittle white-text">
-                        12 rules an interior decorator never forgets
+                        How to Reuse Coffee Grounds for Your Plants
   
                       </div>
                       <div class="foot">
@@ -548,7 +548,7 @@
                         <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
                       </div>
                       <div class="tittle white-text">
-                        12 rules an interior decorator never forgets
+                        Outfit ideas: what to wear on Christmas Day
   
                       </div>
                       <div class="foot">
@@ -575,7 +575,7 @@
                         <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
                       </div>
                       <div class="tittle white-text">
-                        12 rules an interior decorator never forgets
+                        How to Choose Outfits for Work for woman and men
   
                       </div>
                       <div class="foot">
@@ -602,7 +602,8 @@
                         <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
                       </div>
                       <div class="tittle white-text">
-                        12 rules an interior decorator never forgets
+                        How to Grow and Care for Aloe Vera Plants
+
   
                       </div>
                       <div class="foot">
@@ -629,7 +630,7 @@
                         <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
                       </div>
                       <div class="tittle white-text">
-                        12 rules an interior decorator never forgets
+                        How to Cook Chicken Perfectly Every Time
   
                       </div>
                       <div class="foot">
