@@ -16,6 +16,7 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+//###############################################################################
 
 const myNav=document.querySelector('nav')
 const myLink =myNav.querySelectorAll('a')
@@ -24,18 +25,24 @@ function darkMode(){
     for (let i = 0; i < elements.length; i++) {
         elements[i].classList.toggle("back-black")
     }
+    //******************************************************************************** */
     var whitetxt=document.getElementsByClassName('white-text')
     for (let a = 0; a < whitetxt.length; a++) {
         whitetxt[a].classList.toggle('txt-white')
         
     }
+//******************************************************************************** */
+
     let slidebtn=document.getElementsByClassName('owl-next')
     slidebtn[0].classList.toggle('btn-bg')
     let slidebtn1=document.getElementsByClassName('owl-prev')
     slidebtn1[0].classList.toggle('btn-bg')
+    //******************************************************************************** */
+
 
     let dark=document.getElementById('small-images')
     dark.classList.toggle('sm-img-dark')
+//******************************************************************************** */
 
     let cardfootdark=document.getElementsByClassName('card-foot-dark')
 
@@ -43,6 +50,8 @@ function darkMode(){
         cardfootdark[a].classList.toggle('card-f-dark')
         
     }
+//******************************************************************************** */
+
     let mytogler=document.getElementsByClassName('my-togler')
 
     mytogler[0].classList.toggle('my-togl')
@@ -85,16 +94,23 @@ function darkMode(){
     for (let a = 0; a < pagehover.length; a++) {
         pagehover[a].classList.toggle('page-hover-style')
     }
+    //******************************************************************************** */
+    let langdark=document.getElementsByClassName('lang-dark')
+    for (let l = 0; l < langdark.length; l++) {
+        langdark[l].classList.toggle('lang-dark-style')
+        
+    }
+    //*********************************************************************************** */
     
     
 
 }
-
+//#######################################################################
 function mySearchArea(){
     let searcharea=document.getElementById('search-area')
     searcharea.classList.toggle('my-search-area-style')
 }
-
+//########################################################################
 
 const changelang=document.querySelectorAll('.language')
 
@@ -119,3 +135,4 @@ const enLang=()=>{
     changelang[4].innerHTML="Pages"
     changelang[5].innerHTML="Contact"
 }
+//#############################################################################

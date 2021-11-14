@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    z-index: 1;
 
     #search-area{
         position: fixed;
@@ -86,9 +87,17 @@
         position: fixed;
         z-index: 9999;
         width: 100%;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
         .custom-container{
             .my-nav{
                 background-color: white;
+                .nav-item{
+                    a{
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: #222222;
+                    }
+                }
                 .web-zone{
                     display: flex;
                     align-items: center;
@@ -97,6 +106,9 @@
                     span{
                         margin-right: 7px;
                         cursor: pointer;
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: #222222;
 
                     }
                     .search{
@@ -367,6 +379,8 @@
     #great-design{
         .custom-container{
             .row{
+                display: flex;
+                align-items: center;
                 .col-lg-7{
                     .text-area{
                         

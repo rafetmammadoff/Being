@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  z-index: 1;
 }
 
 .general-container #search-area {
@@ -116,10 +117,18 @@
   position: fixed;
   z-index: 9999;
   width: 100%;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .general-container #header .custom-container .my-nav {
   background-color: white;
+}
+
+.general-container #header .custom-container .my-nav .nav-item a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #222222;
 }
 
 .general-container #header .custom-container .my-nav .web-zone {
@@ -138,6 +147,9 @@
 .general-container #header .custom-container .my-nav .web-zone span {
   margin-right: 7px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: #222222;
 }
 
 .general-container #header .custom-container .my-nav .web-zone .search {
@@ -433,6 +445,15 @@
   font-size: 13px;
   color: #6b6768;
   margin-top: 20px;
+}
+
+.general-container #great-design .custom-container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .general-container #great-design .custom-container .row .col-lg-7 .text-area .b-head {
@@ -842,7 +863,8 @@ li {
 }
 
 .my-togl {
-  background-color: white !important;
+  background-color: #2b2b2b !important;
+  border: 1px solid #f7f7f7 !important;
 }
 
 .my-search-area-style {
@@ -876,7 +898,7 @@ li {
 }
 
 .nav-page .page-hover {
-  position: absolute;
+  position: fixed;
   background-color: #fff;
   -webkit-box-shadow: 0 0 15px 0.1px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 15px 0.1px rgba(0, 0, 0, 0.1);
@@ -885,9 +907,10 @@ li {
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
   opacity: 0;
-  z-index: -4;
-  -webkit-transition: 1s;
-  transition: 1s;
+  z-index: -9;
+  -webkit-transition: .5s;
+  transition: .5s;
+  visibility: hidden;
 }
 
 .nav-page .page-hover li {
@@ -901,11 +924,16 @@ li {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   opacity: 12;
-  z-index: 99999999;
+  z-index: 99;
+  visibility: inherit;
 }
 
 .page-hover-style {
   background-color: #2b2b2b !important;
+  color: #fff !important;
+}
+
+.lang-dark-style {
   color: #fff !important;
 }
 

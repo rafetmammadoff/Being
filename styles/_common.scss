@@ -75,7 +75,9 @@ li{
 
 }
 .my-togl{
-    background-color: white !important;
+    background-color: #2b2b2b !important;
+    border: 1px solid #f7f7f7 !important;
+    
 }
 .my-search-area-style{
     transform: translateY(0px) !important;
@@ -107,7 +109,7 @@ li{
     
    
     .page-hover{
-        position: absolute;
+        position: fixed;
         background-color: #fff;
        
         box-shadow: 0 0 15px .1px rgba(0,0,0,0.1);
@@ -115,9 +117,11 @@ li{
         padding: 20px;
         transform: translateY(50px);
         opacity: 0;
-        z-index: -4;
-        transition: 1s;
+        z-index: -9;
+        transition: .5s;
+        visibility: hidden;
         li{
+
            line-height: 2.3;
            font-size: 16px;
            font-weight: 700;
@@ -130,12 +134,17 @@ li{
         .page-hover{
             transform: translateY(0px);
             opacity: 12;
-            z-index: 99999999;
+            z-index: 99;
+            visibility: inherit;
         }
     }
 }
 
 .page-hover-style{
     background-color: #2b2b2b !important;
+    color: #fff !important;
+}
+
+.lang-dark-style{
     color: #fff !important;
 }
