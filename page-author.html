@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./Assets/font/fonts/css/all.min.css">
+  </head>
+  <body>
+    <div class="general-container arxasi-qaralacaq-elementler">
+
+        <section id="search-area" class="arxasi-qaralacaq-elementler">
+          <div onclick="mySearchArea()" class="disable">
+            <i class="fas fa-times"></i>
+          </div>
+          <div class="container">
+            <div class="email-area">
+              <form>
+                <input id="first-inp" type="email" placeholder="What are you looking for?">
+                <button onclick="search()" id="first-btn" type="submit"><i class="fas fa-search"></i> Search</button>
+              </form>
+            </div>
+
+          </div>
+        </section>
+        <section id="header" class="arxasi-qaralacaq-elementler">
+            <div class="container custom-container">
+                <nav class="navbar navbar-expand-lg navbar-light my-nav arxasi-qaralacaq-elementler">
+                    <div class="container-fluid">
+                      <a  class="navbar-brand my-logo" href="index.html"><img id="my-logo" src="./img/logo-dark.png" alt=""></a>
+                      <button class="navbar-toggler my-togler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                          <li class="nav-item nav-page">
+                            <a class="nav-link active white-text language" aria-current="page" href="#">Home</a>
+                            <ul class="page-hover">
+                              <li>Home 1</li>
+                              <li>Home 2</li>
+                              <li>Home 3</li>
+                            </ul>
+                          </li>
+                          <li class="nav-item nav-page">
+                            <a class="nav-link active white-text language" aria-current="page" href="#">Blog </a>
+                            <ul class="page-hover">
+                              <li><a class="my-link" href="blog.html">Blog List</a></li>
+                              <li>Blog List 2</li>
+                              <li>Blog Grid</li>
+                              <li>Blog Grid 2</li>
+
+                            </ul>
+                          </li>
+                          <li class="nav-item nav-page">
+                            <a class="nav-link active white-text language" aria-current="page" href="#">Posts Features</a>
+                            <ul class="page-hover">
+                              <li>Post Default</li>
+                              <li>Right Slidebar</li>
+                              <li>Left Slidebar</li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active white-text language" aria-current="page" href="#">Art & Design</a>
+                          </li>
+                          <li class="nav-item nav-page">
+                            <a class="nav-link active white-text language" aria-current="page" href="#">Pages</a>
+                            <ul class="page-hover">
+                              <li><a class="my-link" href="page-author.html">Author </a> </li>
+                              <li><a class="my-link" href="about.html">About</a></li>
+                              <li>Contact</li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active white-text language" aria-current="page" href="#">Contact</a>
+                          </li>
+                          
+                        </ul>
+                        <div class="web-zone white-text">
+                            
+                          <span class="lang-dark english" onclick="enLang()"></span>
+                          <span class="lang-dark turkish" onclick="trLang()"></span>
+                            <div onclick="darkMode()" id="dark-white">
+                              <i id="my-icon" class="fas fa-sun"></i>
+                            </div>
+                            <div onclick="mySearchArea()" class="search">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+
+            </div>
+        </section>
+        
+        <section id="design" class="arxasi-qaralacaq-elementler">
+          <div class="container custom-container">
+            <div class="row">
+                <div class="col-12 author-area">
+                    <div class="row sm-row">
+                        <div class="col-lg-7 author-zone">
+                            <div class="author-img-zone">
+                                <img src="./img/author.jpg" alt="">
+
+                            </div>
+                            <div class="author-tittle blog-head">
+                                Hi, I'm Emma Dalia
+
+                            </div>
+                            <div class="author-head">
+                                <span>8 Articles</span>
+
+                            </div>
+                            <div class="author-content">
+                                Etiam vitae dapibus rhoncus. Eget etiam aenean nisi montes felis pretium donec veni. 
+                                Pede vidi condimentum et aenean hendrerit. Quis sem justo nisi varius.
+
+                            </div>
+                            <div class="author-foot">
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-youtube"></i>
+                                <i class="fab fa-behance"></i>
+                                <i class="fas fa-basketball-ball"></i>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="big-card">
+                  <div class="img-area author-img-area">
+                    <div class="img-zone">
+                      <img src="./img/d1.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <div class="b-head">
+                      <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
+                    </div>
+                    <div class="tittle white-text">
+                      Lighting tips for every room in the house
+
+                    </div>
+                    <div class="foot">
+                        <span>Emma Dalia</span><span>. 2 Months Ago</span>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="big-card">
+                  <div class="img-area author-img-area">
+                    <div class="img-zone">
+                      <img src="./img/d2.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <div class="b-head">
+                      <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
+                    </div>
+                    <div class="tittle white-text">
+                      It’s easier to ask forgiveness than it is to get permission.
+
+                    </div>
+                    <div class="foot">
+                        <span>Emma Dalia</span><span>. 2 Months Ago</span>
+
+                    </div>
+                </div>
+
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="big-card">
+                  <div class="img-area author-img-area">
+                    <div class="img-zone">
+                      <img src="./img/d3.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <div class="b-head">
+                      <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
+                    </div>
+                    <div class="tittle white-text">
+                      45 Summer Flowers for a Stunning Home Garden
+
+                    </div>
+                    <div class="foot">
+                        <span>Emma Dalia</span><span>. 2 Months Ago</span>
+
+                    </div>
+                </div>
+
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="big-card">
+                  <div class="img-area author-img-area">
+                    <div class="img-zone">
+                      <img src="./img/d4.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <div class="b-head">
+                      <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
+                    </div>
+                    <div class="tittle white-text">
+                      12 rules an interior decorator never forgets
+
+                    </div>
+                    <div class="foot">
+                        <span>Emma Dalia</span><span>. 2 Months Ago</span>
+
+                    </div>
+                </div>
+
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="big-card">
+                  <div class="img-area author-img-area">
+                    <div class="img-zone">
+                      <img src="./img/d5.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <div class="b-head">
+                      <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
+                    </div>
+                    <div class="tittle white-text">
+                      The best way to predict the future is to create it
+
+                    </div>
+                    <div class="foot">
+                        <span>Emma Dalia</span><span>. 2 Months Ago</span>
+
+                    </div>
+                </div>
+
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="big-card">
+                  <div class="img-area author-img-area">
+                    <div class="img-zone">
+                      <img src="./img/d6.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <div class="b-head">
+                      <div class="head"><i class="far fa-dot-circle"></i> Plants</div>
+                    </div>
+                    <div class="tittle white-text">
+                      30 Perfect Flowers for a Fall <br> Garden
+
+                    </div>
+                    <div class="foot">
+                        <span>Emma Dalia</span><span>. 2 Months Ago</span>
+
+                    </div>
+                </div>
+
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+        
+        <section id="footer">
+          <div class="container custom-container">
+            <div class="row">
+
+              <div class="col-12 footer-top">
+                <ul class="cat-list">
+                  <li class="f-grid-four f-grid-eight">
+                    <div class="img-zone blog-img-zone">
+                      <img src="./img/cat1.jpg" alt="">
+                    </div>
+                    <div class="card-foot card-foot-dark">
+                      Plants
+                    </div>
+
+                  </li>
+                  <li class="f-grid-four f-grid-eight">
+                    <div class="img-zone blog-img-zone">
+                      <img src="./img/cat2.jpg" alt="">
+                    </div>
+                    <div class="card-foot card-foot-dark">
+                      Plants
+                    </div>
+
+                  </li>
+                  <li class="f-grid-four f-grid-eight">
+                    <div class="img-zone blog-img-zone">
+                      <img src="./img/cat3.jpg" alt="">
+                    </div>
+                    <div class="card-foot card-foot-dark">
+                      Plants
+                    </div>
+
+                  </li>
+                  <li class="f-grid-four f-grid-eight">
+                    <div class="img-zone blog-img-zone">
+                      <img src="./img/4.jpg" alt="">
+                    </div>
+                    <div class="card-foot card-foot-dark">
+                      Plants
+                    </div>
+
+                  </li>
+                  <li class="f-grid-four f-grid-eight">
+                    <div class="img-zone blog-img-zone">
+                      <img src="./img/5.jpg" alt="">
+                    </div>
+                    <div class="card-foot card-foot-dark">
+                      Plants
+                    </div>
+
+                  </li>
+                  <li class="f-grid-four f-grid-eight">
+                    <div class="img-zone blog-img-zone">
+                      <img src="./img/cat6.jpg" alt="">
+                    </div>
+                    <div class="card-foot card-foot-dark">
+                      Plants
+                    </div>
+
+                  </li>
+                  <li class="f-grid-four f-grid-eight">
+                    <div class="img-zone blog-img-zone">
+                      <img src="./img/7.jpg" alt="">
+                    </div>
+                    <div class="card-foot card-foot-dark">
+                      Plants
+                    </div>
+
+                  </li>
+                  <li class="f-grid-four f-grid-eight">
+                    <div class="img-zone blog-img-zone">
+                      <img src="./img/cat8.jpg" alt="">
+                    </div>
+                    <div class="card-foot card-foot-dark">
+                      Plants
+                    </div>
+
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 footer-bottom">
+                <div class="tittle">
+                  Get the best blog stories into your inbox !
+                </div>
+                <div class="content">
+                  Sign up for free and be the first to get notified about new posts.
+                </div>
+                <div class="email-area">
+                  <form>
+                    <input type="email" required placeholder="Your Email Adress">
+                    <button type="submit"><i class="fab fa-telegram-plane"></i> Subscribe</button>
+                  </form>
+                </div>
+
+              </div>
+              <div class="col-12 copy-right">
+                <p>© 2020 Being - Personal Blog Html Template.</p>
+                <p>Design by AssiaGroupe - All rights reserved.</p>
+              </div>
+              
+              
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="./Assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./Assets/js/owl.carousel.min.js"></script>
+    <script src="./Assets/js/style.js"></script>
+  </body>
+</html>

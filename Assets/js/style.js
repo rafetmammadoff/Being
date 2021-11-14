@@ -1,4 +1,5 @@
 
+    console.log(document.getElementById("header"))
 
 
 function search(){
@@ -43,14 +44,22 @@ function darkMode(){
 //******************************************************************************** */
 
     let slidebtn=document.getElementsByClassName('owl-next')
-    slidebtn[0].classList.toggle('btn-bg')
+    if(slidebtn.length > 0){
+        slidebtn[0].classList.toggle('btn-bg')
+    }
     let slidebtn1=document.getElementsByClassName('owl-prev')
-    slidebtn1[0].classList.toggle('btn-bg')
+
+    if(slidebtn1.length > 0){
+        slidebtn1[0].classList.toggle('btn-bg')
+    }
     //******************************************************************************** */
 
 
     let dark=document.getElementById('small-images')
-    dark.classList.toggle('sm-img-dark')
+    console.log(dark)
+    if(dark != null){
+        dark.classList.toggle('sm-img-dark')
+    }
 //******************************************************************************** */
 
     let cardfootdark=document.getElementsByClassName('card-foot-dark')
@@ -68,7 +77,7 @@ function darkMode(){
 
     let mylogo=document.getElementById('my-logo')
 
-    if(elements[0].classList.contains("back-black")){
+    if(document.getElementById("header").classList.contains("back-black")){
         mylogo.src = "./img/logo-white.png";
     }else{
         mylogo.src = "./img/logo-dark.png";
@@ -112,6 +121,20 @@ function darkMode(){
     //*********************************************************************************** */
     let input1=document.getElementById('first-inp')
     input1.classList.toggle('sty')
+
+    let bloghead=document.getElementsByClassName('blog-head')
+    console.log(bloghead)
+    if(bloghead.length > 0){
+
+        bloghead[0].classList.toggle('bloghead')
+    }
+
+    let mylink=document.getElementsByClassName('my-link')
+    console.log(mylink);
+    for (let b = 0; b < mylink.length; b++) {
+        mylink[b].classList.toggle('links')
+        
+    }
     
 
 }
