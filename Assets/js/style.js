@@ -135,6 +135,18 @@ function darkMode(){
         mylink[b].classList.toggle('links')
         
     }
+
+    let contactinput=document.getElementsByClassName('contact-input1')
+    for (let c = 0; c < contactinput.length; c++) {
+        contactinput[c].classList.toggle('contact-inp')
+        
+    }
+
+    let contacttittle=document.getElementsByClassName('contact-tittle')
+    for (let t = 0; t < contacttittle.length; t++) {
+        contacttittle[t].classList.toggle('contact-tittle-dark')
+        
+    }
     
 
 }
